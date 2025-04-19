@@ -1,3 +1,5 @@
+// JavaScript is a dynamic language
+
 //  Primitive
 
 //  7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
@@ -62,3 +64,5 @@ userOne.name = "Aman";
 
 console.log(userOne.name); // Output: Aman
 console.log(userTwo.name); // Output: Aman
+
+// https://262.ecma-international.org/5.1/#sec-11.4.3

@@ -8,7 +8,8 @@ function sayMyName() {
     console.log("H");
 }
 
-// sayMyName()
+// sayMyName  // Reference
+// sayMyName()  // Function Call
 
 // function addTwoNumbers(number1, number2){
 
@@ -36,10 +37,11 @@ function loginUserMessage(username = "sam") {
 }
 
 // console.log(loginUserMessage("hitesh"))
-// console.log(loginUserMessage("hitesh"))
+// console.log(loginUserMessage("")) // Empty String
+// console.log(loginUserMessage())  // Undefined
 
 
-function calculateCartPrice(val1, val2, ...num1) {
+function calculateCartPrice(...num1) {
     return num1
 }
 

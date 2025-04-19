@@ -80,3 +80,10 @@ console.log(instructor);
 //     {},
 //     {}
 // ]
+
+// Destructuring (ReactJs)
+const navbar = ({company}) =>{
+
+}
+
+navbar(company = "Aman")

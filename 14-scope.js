@@ -7,8 +7,6 @@ if (true) {
 
 }
 
-
-
 // console.log(a);
 // console.log(b);
 // console.log(c);
@@ -21,7 +19,7 @@ function one() {
         const website = "youtube"
         console.log(username);
     }
-    // console.log(website);
+    // console.log(website); // Error: website is not defined
 
     two()
 
@@ -33,12 +31,12 @@ if (true) {
     const username = "hitesh"
     if (username === "hitesh") {
         const website = " youtube"
-        // console.log(username + website);
+        console.log(username + website);  
     }
-    // console.log(website);
+    // console.log(website);  // Error: website is not defined
 }
 
-// console.log(username);
+// console.log(username); //Error: username is not defined
 
 
 // ++++++++++++++++++ interesting ++++++++++++++++++
@@ -50,9 +48,9 @@ function addone(num) {
     return num + 1
 }
 
+// console.log(addTwo(5)) // Error: Cannot access 'addTwo' before initialization
 
-
-addTwo(5)
-const addTwo = function (num) {
-    return num + 2
-}
+// addTwo(5)
+// const addTwo = function (num) {
+//     return num + 2
+// }

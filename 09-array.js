@@ -24,7 +24,8 @@ const myArr2 = new Array(1, 2, 3, 4)
 // console.log( newArr);
 
 
-// slice, splice
+// slice, :- it will not change the original array
+// splice :- it will change the original array
 
 console.log("A ", myArr);
 
