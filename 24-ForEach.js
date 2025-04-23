@@ -1,18 +1,17 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// coding.forEach( function (val){
-//     console.log(val);
-// } )
+coding.forEach( function (val){
+    console.log(val);
+} )
 
-// coding.forEach( (item) => {
-//     console.log(item);
-// } )
+coding.forEach( (item) => {
+    console.log(item);
+} )
 
-// function printMe(item){
-//     console.log(item);
-// }
-
-// coding.forEach(printMe)
+function printMe(item){
+    console.log(item);
+}
+coding.forEach(printMe)
 
 // coding.forEach( (item, index, arr)=> {
 //     console.log(item, index, arr);
@@ -34,7 +33,6 @@ const myCoding = [
 ]
 
 myCoding.forEach((item) => {
-
     console.log(item.languageName);
 })
 
@@ -51,6 +49,11 @@ const books = [
 ];
 
 let userBooks = books.filter((bk) => bk.genre === 'History')
+console.log(userBooks);
+
+// let userBooks2 = books.filter((bk) => bk.publish > 2000)
+let userBooks2 = books.filter((bk) => bk.edition > 2004)
+console.log(userBooks2);
 
 userBooks = books.filter((bk) => {
     return bk.publish >= 1995 && bk.genre === "History"
