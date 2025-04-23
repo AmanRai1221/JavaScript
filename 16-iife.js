@@ -6,6 +6,7 @@
     console.log(`DB CONNECTED`);
 })();
 
+// Unnamed IIFE with parameters
 ((name) => {
     console.log(`DB CONNECTED TWO ${name}`);
-})('hitesh')
+})('Aman')

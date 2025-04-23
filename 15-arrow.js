@@ -29,19 +29,18 @@ const user = {
 
 const chai = () => {
     let username = "hitesh"
+    // console.log(this.username); // undefined
     console.log(this);
 }
-
-
 // chai()
 
 // const addTwo = (num1, num2) => {
 //     return num1 + num2
 // }
 
-// const addTwo = (num1, num2) =>  num1 + num2
+// const addTwo = (num1, num2) =>  num1 + num2  // Implicit return
 
-// const addTwo = (num1, num2) => ( num1 + num2 )
+// const addTwo = (num1, num2) => ( num1 + num2 ) // Implicit return
 
 const addTwo = (num1, num2) => ({ username: "hitesh" })
 
