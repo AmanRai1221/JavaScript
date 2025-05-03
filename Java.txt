@@ -1,0 +1,24 @@
+    "JavaScript" 
+Default JavaScript Behavoiur
+* It is Synchronus in nature (Code exuceted line by line).
+* It is Single Threaded Language.(Slower than others Language)
+
+Execution Context
+ Execute one line of code at a time. Each operation wait last one to completing before Execution.
+-> console.log(1)
+-> console.log(2)
+    'Call Stack'      'Memory Heap'
+
+'Blocking Code'  
+    |
+Block the flow of Program
+    |
+Read File Sync.
+
+    VS
+
+'Non-Blocking Code'
+    |
+Does not block Execution
+    |
+Read File Async.

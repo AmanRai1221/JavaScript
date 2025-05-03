@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Event</title>
+</head>
+<body style="background-color: #221f1f;">
+    <h2>Animated Images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="iron" src="IrnM.jpg" alt=""></li>
+            <li><img width="200px" id="bat" src="BM.jpg" alt=""></li>
+            <li><img width="200px" id="black" src="BP.jpg" alt=""></li>
+            <li><img width="200px" id="hulk" src="Hilk.jpg" alt=""></li>
+            <li style="color: red;"><a href="http://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('iron').onclick = function(){
+    //     alert('Iron Man')
+    // }
+    
+    // attachEvent using addEventListener
+    // jQuery('#iron').on('click', function(){})
+
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul")
+    }, false)
+
+    document.getElementById('iron').addEventListener('click', function(e){
+        console.log("Iron Man clicked")
+        e.stopPropagation() // stop the event from bubbling up to the parent element
+    }, false)
+
+    document.getElementById('google').addEventListener('click', function(e){
+        e.preventDefault(); // prevent the default action of the link
+        e.stopPropagation() // stop the event from bubbling up to the parent element
+        console.log("Google link clicked")
+    }, false)
+
+
+    // Code to remove the image on click
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id)
+            let removeIt = e.target.parentNode
+            removeIt.remove()   
+        }
+    })
+</script>
+</html>
